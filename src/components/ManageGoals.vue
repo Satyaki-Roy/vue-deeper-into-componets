@@ -1,12 +1,14 @@
 <template>
-<h2>Manage Goals</h2>
-<input type="text" ref="goal">
-<button @click="setGoal">Set Goal</button>
-  <error-alert v-if="isGoalEmpty">
-    <h2>Input is invalid</h2>
-    <p>Please enter few characters</p>
-    <button @click="hideError">Ok</button>
-  </error-alert>
+  <h2>Manage Goals</h2>
+  <input type="text" ref="goal">
+  <button @click="setGoal">Set Goal</button>
+  <teleport to="body">
+    <error-alert v-if="isGoalEmpty">
+      <h2>Input is invalid</h2>
+      <p>Please enter few characters</p>
+      <button @click="hideError">Ok</button>
+    </error-alert>
+  </teleport>
 </template>
 
 <script>
