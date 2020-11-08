@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import TheHeader from '@/components/TheHeader.vue';
+import TheHeader from '@/components/layout/TheHeader.vue';
 import ActiveGoals from "@/components/ActiveGoals";
 import ManageGoals from "@/components/ManageGoals";
 
